@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bj_bule"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/com_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/top"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/taximain_border"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <RelativeLayout
+            android:id="@+id/waittaxi_result"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dip"
+            android:layout_marginRight="35dip"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dip"
+                android:src="@drawable/ic_car" />
+
+            <LinearLayout
+                android:id="@+id/a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dip" >
+
+                <TextView
+                    android:id="@+id/taxi_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="王师傅 "
+                    android:textColor="#eef5fb"
+                    android:textSize="16dip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="抢单 "
+                    android:textColor="#eef5fb"
+                    android:textSize="14dip" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/taxi_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/a"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dip"
+                android:text="车牌号:皖A23456"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dip"
+            android:layout_marginLeft="35dip"
+            android:layout_marginRight="35dip"
+            android:layout_marginTop="50dip" >
+
+            <TextView
+                android:id="@+id/waittaxi_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/car_icon"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dip"
+                android:text="以发送给10辆车"
+                android:textColor="#ffffff" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/waittaxi_tv"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/wait_pro_bg"
+                android:indeterminate="false"
+                android:indeterminateOnly="false"
+                android:maxHeight="20dip"
+                android:minHeight="10dip"
+                android:padding="1dip"
+                android:progress="20"
+                android:progressDrawable="@drawable/progress_horizontal1" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/wait_but"
+            android:layout_width="120dip"
+            android:layout_height="35dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dip"
+            android:background="@drawable/wait_pro_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <TextView
+                android:id="@+id/record_but_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dip"
+                android:gravity="center"
+                android:text="取     消"
+                android:textColor="#9db8cb"
+                android:textSize="10dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

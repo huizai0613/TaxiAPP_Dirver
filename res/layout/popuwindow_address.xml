@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/address_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dip"
+        android:divider="#b8b8b8"
+        android:dividerHeight="0.5dip"
+        android:scrollbars="none" >
+    </ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#b8b8b8" />
+
+    <View
+        android:id="@+id/address_but"
+        android:layout_width="50dip"
+        android:layout_height="30dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/popuwindow_icon"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" />
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/above_title_height"
+    android:background="@drawable/nav_top_bj"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/com_title_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dip"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="8dip" >
+
+        <View
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/com_back_icon" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/com_title_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="@dimen/above_title_content_padding"
+        android:text="首　页"
+        android:textColor="@color/com_title_content_color"
+        android:textSize="@dimen/above_title_content_size"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/com_title_deputy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="8dip"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/com_title_deputy_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/com_title_content_color" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.8dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottom_bar_line" />
+
+</RelativeLayout>

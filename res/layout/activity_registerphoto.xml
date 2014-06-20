@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/com_title" />
+
+    <ImageView
+        android:background="#33000000"
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="250dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/photo_bg" />
+
+    <Button
+        android:id="@+id/submit_but"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/rating_but_bg"
+        android:padding="5dip"
+        android:text="提交,等待审核"
+        android:textColor="#ffffff"
+        android:textSize="15dip" />
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/map_top"
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:background="@drawable/map_top_bg"
+        android:gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/map_back"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_marginLeft="10dip"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/map_back_icon" />
+
+        <EditText
+            android:id="@+id/map_address_go"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="65dip"
+            android:layout_toRightOf="@id/map_back"
+            android:background="@drawable/map_address_border"
+            android:drawableLeft="@drawable/go_icon"
+            android:hint="输入出发地"
+            android:padding="1dip"
+            android:singleLine="true"
+            android:textSize="12dip" />
+
+        <EditText
+            android:id="@+id/map_address_to"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="65dip"
+            android:layout_toRightOf="@id/map_back"
+            android:background="@drawable/map_address_border"
+            android:drawableLeft="@drawable/to_icon"
+            android:hint="输入终点"
+            android:padding="1dip"
+            android:singleLine="true"
+            android:textSize="12dip"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/map_go"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dip"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/map_go_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapsView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+
+        <View
+            android:id="@+id/home_but_locate"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/home_btn_locate" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@color/activity_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/com_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dip"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:gravity="center"
+            android:text="服务评价"
+            android:textColor="#707070"
+            android:textSize="18dip" />
+
+        <RatingBar
+            style="@style/roomRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_marginLeft="30dip"
+            android:numStars="5"
+            android:stepSize="0.5" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/rating_border"
+        android:padding="10dip" >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            android:layout_marginBottom="20dip"
+            android:background="@null"
+            android:gravity="top|left"
+            android:hint="亲 , 您的评价对其他乘客有很大帮助哦!"
+            android:textSize="12dip" />
+
+        <TextView
+            android:id="@+id/rating_tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="还可以输入100字"
+            android:textColor="#aeaeae" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/rating_but_bg"
+        android:padding="5dip"
+        android:text="提交评论"
+        android:textColor="#ffffff"
+        android:textSize="15dip" />
+
+</LinearLayout>

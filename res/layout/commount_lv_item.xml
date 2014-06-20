@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dip"
+        android:background="#ecebe9" >
+
+        <View
+            android:layout_width="30dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/commount_left_lin2" />
+
+        <View
+            android:id="@+id/commount_state_image"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/ic_commount_on" />
+
+        <TextView
+            android:id="@+id/commount_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_alignTop="@id/commount_state_image"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/commount_state_image"
+            android:drawableLeft="@drawable/ic_commount_state"
+            android:gravity="center_vertical"
+            android:text="2014-10-10 11:11:11" />
+
+        <TextView
+            android:id="@+id/commount_state_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/commount_state_image"
+            android:layout_marginRight="10dip"
+            android:gravity="center_vertical"
+            android:text="接驾中" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/commount_state_tv"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@id/commount_state_image"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip" >
+
+                <View
+                    android:layout_width="30dip"
+                    android:layout_height="70dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/taxi_main_goto_icon" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="90dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/taxi_main_go_tv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="44dip"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/go_icon"
+                        android:gravity="center_vertical"
+                        android:textColor="#aaafb2"
+                        android:textSize="14dip" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.3dip"
+                        android:layout_marginLeft="5dip"
+                        android:background="#c6c6c6" />
+
+                    <TextView
+                        android:id="@+id/taxi_main_to_tv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="44dip"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/to_icon"
+                        android:gravity="center_vertical"
+                        android:textColor="#aaafb2"
+                        android:textSize="14dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dip"
+                android:orientation="vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="給价:"
+                        android:textColor="#373e44"
+                        android:textSize="14dip" />
+
+                    <EditText
+                        android:id="@+id/taxi_price_et"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@null"
+                        android:hint="议价"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:paddingLeft="8dip"
+                        android:textColor="#373e44"
+                        android:textColorHint="#373e44"
+                        android:textSize="14dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

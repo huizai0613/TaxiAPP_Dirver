@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/com_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.5"
+        android:background="@drawable/wait_taxi_top_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="35dip"
+            android:layout_marginRight="35dip" >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dip"
+                android:src="@drawable/waittaxi_icon" />
+
+            <TextView
+                android:id="@+id/taxi_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dip"
+                android:text="王师傅"
+                android:textColor="#28a86d" />
+
+            <Button
+                android:id="@+id/wait_taxi_but"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:layout_below="@id/taxi_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/wait_but_bg"
+                android:drawableLeft="@drawable/ic_wait_taxi_phone"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:text="　呼叫司机"
+                android:textColor="#ffffff"
+                android:textSize="12dip" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="20dip"
+            android:drawableLeft="@drawable/ic_smail"
+            android:gravity="center"
+            android:text="距您1.2公里,预计10分钟"
+            android:textColor="#ff7101"
+            android:textScaleX="1.3"
+            android:textSize="14dip" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/wait_taxi_redBut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dip"
+                android:background="@null"
+                android:src="@drawable/wait_taxi_red" />
+
+            <ImageButton
+                android:id="@+id/wait_taxi_grennBut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:background="@null"
+                android:src="@drawable/wait_taxi_grenn" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

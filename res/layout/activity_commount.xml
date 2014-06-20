@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/com_title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <include
+            android:id="@+id/clock"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            layout="@layout/time" />
+    </RelativeLayout>
+
+    <com.wutong.taxiapp.view.ExtendedListView
+        xmlns:miles="http://apk/res/com.wutong.taxiapp"
+        android:id="@+id/commount_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="0dip"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="vertical"
+        android:scrollingCache="false"
+        miles:scrollBarPanel="@layout/time"
+        miles:scrollBarPanelInAnimation="@anim/in"
+        miles:scrollBarPanelOutAnimation="@anim/out" >
+    </com.wutong.taxiapp.view.ExtendedListView>
+
+</LinearLayout>

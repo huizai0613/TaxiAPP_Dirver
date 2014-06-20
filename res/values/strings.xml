@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="download_confirm_msg">检测到您尚未安装语音组件，是否现在安装？</string>
+    <string name="dialog_confirm_button">确定</string>
+    <string name="dialog_cancel_button">取消</string>
+    <string name="text_iat_begin">请开始说话...</string>
+    <string name="text_iat_uploading">开始上传数据....</string>
+    <string name="text_iat_word">个性化此会 </string>
+    <string name="text_iat_recognizing">音量: </string>
+    <string name="text_iat_loginerror">登录失败 </string>
+    <string name="text_iat_uploadwords">上传词表</string>
+    <string name="text_iat_uploadsuccess">上传成功</string>
+    <string name="text_iat_uploadalready">联系人为空或已上传</string>
+    <string name="text_iat_uploadcontacts">上传联系人</string>
+    <string name="text_iat_downloadsuccess">下载成功 </string>
+    <string name="ok">确 定</string>
+    <string name="cancel">取 消</string>
+    <string name="superman_title">来 吧 !</string>
+    <string name="superman_content">来吧安装插件节省流量</string>
+    <string name="res_style">唤醒资源类型</string>
+    <string name="wakeuper_word">唤醒词</string>
+    <string name="res_from_assets">从assets中读取</string>
+    <string name="res_from_client">从客户端读取</string>
+    <string name="res_from_path">从指定路径读取</string>
+    <string name="app_name">TaxiAPP</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="_but_text1">确定</string>
+    <string name="_but_text2">登录</string>
+    <string name="loading">裁剪图片</string>
+    <string name="image_contentDescription">image_contentDescription</string>
+    <string name="_slidingmenu_changge_phone">更换手机号码</string>
+    <string name="_register_start_back_string">返　回</string>
+    <string name="_register_start_next_string">下一步</string>
+    <string name="_register_end_ok_string">注　册</string>
+    <string name="_listitem_snatch_text1">給价</string>
+    <string name="_listitem_snatch_text3">语音订单</string>
+    <string name="_listitem_snatch_text2">抢单</string>
+    <string name="_settingactivity_settingOne">我的评论</string>
+    <string name="_settingactivity_settingTwo">修改手机号</string>
+    <string name="_settingactivity_settingThree">修改密码</string>
+    <string name="_settingactivity_settingFour">关于我们</string>
+
+</resources>

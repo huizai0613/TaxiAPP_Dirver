@@ -1,0 +1,272 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bj_bule"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/above_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/top"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/taximain_border"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/taxi_main_title_tv"
+                    style="@style/text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dip"
+                    android:text="您好 ! 您要去哪里 ? " />
+
+                <LinearLayout
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/taxi_main_title_tv"
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="55dip"
+                        android:text="您附近有 " />
+
+                    <TextView
+                        android:id="@+id/taxi_main_car_num_tv"
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5dip"
+                        android:background="#49c8ff"
+                        android:paddingBottom="3dip"
+                        android:paddingLeft="7dip"
+                        android:paddingRight="7dip"
+                        android:paddingTop="2dip"
+                        android:text="20"
+                        android:textColor="#ffffff"
+                        android:textSize="18dip"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/taxi_main_title_tv"
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5dip"
+                        android:text="辆车 " />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="30dip"
+                android:layout_height="20dip"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="20dip"
+                android:background="@drawable/car_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="200dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/taxi_main_goto_bg"
+            android:orientation="vertical"
+            android:paddingBottom="10dip"
+            android:paddingTop="5dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="108dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip" >
+
+                <View
+                    android:layout_width="30dip"
+                    android:layout_height="70dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/taxi_main_goto_icon" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="90dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/taxi_main_go_tv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="44dip"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/go_icon"
+                        android:gravity="center_vertical"
+                        android:hint="从哪儿走"
+                        android:textColor="#aaafb2"
+                        android:textSize="14dip" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.3dip"
+                        android:layout_marginLeft="5dip"
+                        android:background="#c6c6c6" />
+
+                    <TextView
+                        android:id="@+id/taxi_main_to_tv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="44dip"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/to_icon"
+                        android:gravity="center_vertical"
+                        android:hint="到哪儿去"
+                        android:textColor="#aaafb2"
+                        android:textSize="14dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="#8f8f8f" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="#ffffff" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dip"
+                android:orientation="vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="3"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="司机性别:"
+                        android:textColor="#373e44"
+                        android:textSize="14dip" />
+
+                    <RadioGroup
+                        android:id="@+id/sexy_rd"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5dip"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/sexy_all"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:button="@drawable/radio_but"
+                            android:text="全部"
+                            android:textColor="#373e44"
+                            android:textSize="10dip" />
+
+                        <RadioButton
+                            android:id="@+id/sexy_female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="10dip"
+                            android:button="@drawable/radio_but"
+                            android:text="女"
+                            android:textColor="#373e44"
+                            android:textSize="10dip" />
+
+                        <RadioButton
+                            android:id="@+id/sexy_male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="10dip"
+                            android:button="@drawable/radio_but"
+                            android:text="男"
+                            android:textColor="#373e44"
+                            android:textSize="10dip" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="給　　价:"
+                        android:textColor="#373e44"
+                        android:textSize="14dip" />
+
+                    <EditText
+                        android:id="@+id/taxi_price_et"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@null"
+                        android:hint="议价"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:paddingLeft="8dip"
+                        android:textColor="#373e44"
+                        android:textColorHint="#373e44"
+                        android:textSize="14dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_marginTop="20dip" >
+
+            <Button
+                android:id="@+id/go_speak_view"
+                android:layout_width="wrap_content"
+                android:layout_height="35dip"
+                android:background="@drawable/taxi_main_speak_icon" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="fill_parent"
+                android:layout_height="35dip"
+                android:layout_marginLeft="1dip"
+                android:background="@drawable/taxi_main_submit_bg"
+                android:text="马上叫车"
+                android:textColor="#ffffff"
+                android:textSize="13dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

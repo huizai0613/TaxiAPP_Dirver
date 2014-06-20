@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="table_width">70dp</dimen>
+    <dimen name="table_height">38dp</dimen>
+    <!-- 侧边栏 -->
+    <dimen name="slidingmenu_offset">80dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+
+    <!-- 标题配置 -->
+    <dimen name="above_title_height">48dp</dimen>
+    <dimen name="above_title_button_left">10dp</dimen>
+    <dimen name="above_title_button_right">10dp</dimen>
+    <dimen name="above_title_content_padding">8dp</dimen>
+    <dimen name="above_title_content_size">18dip</dimen>
+
+    <!-- 右菜单配置 -->
+    <dimen name="right_menu_login_fream_height">88dp</dimen>
+    <!-- Fragment容器配置 -->
+    <dimen name="fragment_magingTop">48.8dip</dimen>
+    <dimen name="fragment_magingTbottom">50.8dip</dimen>
+
+    <!-- 简历 -->
+    <dimen name="edit_height">30dip</dimen>
+    
+</resources>

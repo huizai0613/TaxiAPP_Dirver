@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 画面背景色 -->
+    <drawable name="layout_backgroud">#000000</drawable>
+
+    <!-- 分割线背景色 -->
+    <drawable name="line_background">#161823</drawable>
+
+    <color name="white">#FFFFFF</color>
+
+    <!-- 控件按下时显示的颜色 -->
+    <color name="list_backgroud_color">#2fb3cb</color>
+    <color name="title_color">#0f8ec5</color>
+    <color name="content_color">#737373</color>
+
+    <!-- 需要改动的颜色 -->
+    <!-- 标题栏颜色 -->
+    <color name="title_bg_color">#f9f9f9</color>
+    <!-- 主界面顶部标题字颜色 -->
+    <color name="above_title_content_color">#ffffff</color>
+    <!-- 二级页面顶部标题字颜色 -->
+    <color name="com_title_content_color">#ffffff</color>
+    <!-- 新闻详情界面的底部栏颜色 -->
+    <color name="newinfo_bottom_bg_color">#f0f0f0</color>
+    <!-- 主界面底部导航栏颜色 -->
+    <color name="main_index_bottom_color">#f9f9f9</color>
+    <!-- 底部菜单字颜色 -->
+    <color name="corlor_tab_up_tv">#333333</color>
+    <!-- 抬起 -->
+    <color name="corlor_tab_down_tv">#0062ff</color>
+    <!-- 按下 -->
+    <color name="corlor_tab_down_bg">#dddddd</color>
+    <!-- 按下时背景色 -->
+
+
+    <!-- 二级页面的整体背景色 -->
+    <color name="seconde_activity_bj_color">#ffffff</color>
+    <color name="dialogWindowg_bg">#77000000</color>
+    <color name="dropDownBack">#dddddd</color>
+    <color name="back">#000000</color>
+    <color name="color_black">#000000</color>
+    <color name="color_shadow">#000000</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_red">#ff0000</color>
+    <color name="color_blue">#0DCBF8</color>
+    <color name="color_gray">#C0C0C0</color>
+    <color name="color_deepskyblue">#00bfff</color>
+    <color name="color_darkcyan">#00ced1</color>
+    <color name="color_darkblue">#b0c4d1</color>
+    <color name="color_saffron">#EE9A49</color>
+    <color name="color_rank_yellow">#F6F005</color>
+    <!-- 图片 边框 -->
+    <color name="image_bord">#ffbbbbbb</color>
+
+    <!-- 侧边栏 -->
+    <!-- 侧边栏背景颜色 -->
+    <color name="behind_slidingmenu_bg_color">#222222</color>
+
+    <!-- 主界面 -->
+
+
+    <!-- 主界面容器背景颜色 -->
+    <color name="fragment_container">#ffffff</color>
+
+    <!-- 底部菜单选中颜色 -->
+    <color name="bottom_bar_check">#dddddd</color>
+    <!-- 主界面上下边框线颜色 -->
+    <color name="bottom_bar_line">#b4b4b4</color>
+    <!-- 图片下文字背景 -->
+    <color name="imageview_text_colot">#77000000 </color>
+    <!-- 内容简介字体颜色 -->
+    <color name="content_info">#666666 </color>
+    <!-- 标题字体颜色 -->
+    <color name="title_info">#ffffff </color>
+
+    <!-- 通用 -->
+    <!-- 普通分割线 -->
+    <color name="com_line">#e2e2e2</color>
+    <!-- 列表分割线颜色 -->
+    <color name="listview_line">#e2e2e2 </color>
+    <!-- 功能键文字 -->
+    <color name="com_text">#3580b0  </color>
+
+    <!-- 简历 与申请职位 -->
+    <color name="resume_text_bg">#cacbcb  </color>
+
+    <!-- listView_iten_bg -->
+    <color name="listView_iten_bg">#ffffff  </color>
+
+    <!-- 消息背景颜色 -->
+    <color name="toast_bg">#770DCBF8  </color>
+
+    <!-- 分割线颜色 -->
+    <color name="line">#cacaca  </color>
+
+    <!-- 订单背景 两种颜色 -->
+    <color name="order_bg_1">#c9d5e3</color>
+    <color name="order_bg_2">#f0f0f0</color>
+
+    <!-- 抢单列表背景色 -->
+    <color name="snatch_list_bg">#d0d0d0</color>
+    <!-- 抢单列表项背景色 -->
+    <color name="snatch_list_item_bg">#ededed</color>
+    <!-- 设置界面文字颜色 -->
+    <color name="setting_text_color">#5a5a5a</color>
+    <!-- 设置界面文字颜色 -->
+    <color name="activity_bg_color">#f5f5f5</color>
+
+    <!-- 我的订单中订单状态文字两种颜色 -->
+    <color name="order_state_ok">#000000</color>
+    <color name="order_state_cancle">#d30511</color>
+    <color name="order_state_ing">#0953b6</color>
+
+</resources>

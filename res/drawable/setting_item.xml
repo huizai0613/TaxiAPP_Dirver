@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="1.0px"
+    android:insetRight="1.0px" >
+
+    <selector>
+        <item android:state_pressed="true">
+            <shape>
+                <gradient
+                    android:angle="90"
+                    android:endColor="#22000000"
+                    android:startColor="#22000000" />
+            </shape>
+        </item>
+        <item>
+            <shape>
+                <gradient
+                    android:angle="90"
+                    android:endColor="#ffffff"
+                    android:startColor="#ffffff" />
+            </shape>
+        </item>
+    </selector>
+
+</inset>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/com_title" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dip"
+        android:src="@drawable/playcash_car" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/playcash_border"
+        android:orientation="vertical"
+        android:padding="30dip" >
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/playcash_in_border"
+            android:hint="输入实际付费"
+            android:padding="10dip"
+            android:textColor="#4b5b6b"
+            android:textColorHint="#4b5b6b"
+            android:textSize="15dip" />
+
+        <Button
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/playcash_but_bg"
+            android:padding="5dip"
+            android:text="我已经现金支付"
+            android:textColor="#ffffff"
+            android:textSize="12dip" />
+    </LinearLayout>
+
+</LinearLayout>

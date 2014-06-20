@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bj_bule"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/com_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/top"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/taximain_border"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="190dip"
+            android:layout_marginLeft="35dip"
+            android:layout_marginRight="35dip"
+            android:layout_marginTop="50dip"
+            android:background="#33000000" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="40dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/record_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/record_animate_02" />
+
+                <TextView
+                    android:id="@+id/record_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dip"
+                    android:layout_marginRight="25dip"
+                    android:layout_marginTop="10dip"
+                    android:lineSpacingExtra="5dip"
+                    android:text="例 :　我在XX,我要到OO,价格10元"
+                    android:textColor="#9db8cb"
+                    android:textSize="10dip" />
+
+                <TextView
+                    android:id="@+id/record_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dip"
+                    android:layout_marginRight="25dip"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center"
+                    android:lineSpacingExtra="5dip"
+                    android:text="点击播放"
+                    android:textColor="#9db8cb"
+                    android:textSize="10dip"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_alignParentBottom="true"
+                android:background="#44000000"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="司机性别:"
+                    android:textColor="#ffffff"
+                    android:textSize="12dip" />
+
+                <RadioGroup
+                    android:id="@+id/sexy_rd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dip"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/sexy_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:button="@drawable/record_radio_but"
+                        android:paddingLeft="10dip"
+                        android:text=" 全部"
+                        android:textColor="#ffffff"
+                        android:textSize="10dip" />
+
+                    <RadioButton
+                        android:id="@+id/sexy_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5dip"
+                        android:layout_weight="1"
+                        android:button="@drawable/record_radio_but"
+                        android:paddingLeft="10dip"
+                        android:text=" 女"
+                        android:textColor="#ffffff"
+                        android:textSize="10dip" />
+
+                    <RadioButton
+                        android:id="@+id/sexy_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5dip"
+                        android:layout_weight="1"
+                        android:button="@drawable/record_radio_but"
+                        android:paddingLeft="10dip"
+                        android:text=" 男"
+                        android:textColor="#ffffff"
+                        android:textSize="10dip" />
+                </RadioGroup>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/record_but"
+            android:layout_width="130dip"
+            android:layout_height="40dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dip"
+            android:background="@drawable/record_border"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <View
+                android:layout_width="20dip"
+                android:layout_height="25dip"
+                android:background="@drawable/record_icon" />
+
+            <TextView
+                android:id="@+id/record_but_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dip"
+                android:gravity="center"
+                android:text="按住语音叫车"
+                android:textColor="#9db8cb" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

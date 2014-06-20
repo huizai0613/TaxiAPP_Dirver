@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bj_bule" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="270dip"
+        android:layout_height="150dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dip"
+        android:scaleType="center"
+        android:src="@drawable/ic_car" />
+
+    <LinearLayout
+        android:id="@+id/m"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_below="@id/icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dip"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="5dip" >
+
+        <LinearLayout
+            android:id="@+id/mobilenum"
+            android:layout_width="250dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/mobilenum_out"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip" >
+
+            <EditText
+                android:id="@+id/edit_mobileNum"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/mobilenum_in"
+                android:hint="请输入手机号"
+                android:inputType="phone"
+                android:paddingLeft="5dip"
+                android:textColorHint="#55000000"
+                android:textSize="12dip" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/but_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_toLeftOf="@id/mobilenum"
+            android:background="@null"
+            android:src="@drawable/ic_mobile" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/b"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_below="@id/m"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <LinearLayout
+            android:layout_width="250dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/mobilenum_out"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip" >
+
+            <EditText
+                android:id="@+id/edit_pwd"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/mobilenum_in"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:paddingLeft="5dip"
+                android:textColorHint="#55000000"
+                android:textSize="12dip" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/but_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_toLeftOf="@id/mobilenum"
+            android:background="@null"
+            android:src="@drawable/ic_pwd" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/login_but"
+        style="@style/text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dip"
+        android:background="@drawable/criclebut_bg"
+        android:text="@string/_but_text1" />
+
+    <TextView
+        android:id="@+id/register_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/icon"
+        android:layout_below="@+id/login_but"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="22dp"
+        android:padding="5dip"
+        android:text="点击注册"
+        android:textColor="#ff9002" />
+
+</RelativeLayout>

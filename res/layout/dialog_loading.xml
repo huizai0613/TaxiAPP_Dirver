@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView_heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:contentDescription="@string/image_contentDescription"
+        android:scaleType="fitXY"
+        android:src="@drawable/loding_image" />
+
+    <com.wutong.taxiapp.view.MultiImageView
+        android:id="@+id/loading_text"
+        android:layout_width="80dip"
+        android:layout_height="29dip"
+        android:layout_marginTop="10dip"
+        android:scaleType="fitXY"
+        android:src="@anim/anim_loading_text" />
+
+</LinearLayout>
