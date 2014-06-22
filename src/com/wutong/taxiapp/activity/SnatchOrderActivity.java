@@ -138,6 +138,8 @@ public class SnatchOrderActivity extends SlidingFragmentActivity implements
 											mMediaPlayer.release();
 											mMediaPlayer.stop();
 											mMediaPlayer = null;
+											getAmrFile(
+													order.getPhone()).delete();
 											mHandler.sendEmptyMessageDelayed(3,
 													2000);
 										}
@@ -170,7 +172,7 @@ public class SnatchOrderActivity extends SlidingFragmentActivity implements
 		FileOutputStream fos = null;
 		byte[] parserString2Byte = parserString2Byte(order.getSourceSound());
 		File amrFile = getAmrFile(order.getPhone());
-		if ("START".equals(order.getFlag())) {
+		if ("ALL".equals(order.getFlag()) || "START".equals(order.getFlag())) {
 			if (amrFile.exists()) {
 				amrFile.delete();
 				try {
@@ -185,7 +187,10 @@ public class SnatchOrderActivity extends SlidingFragmentActivity implements
 		try {
 			fos = new FileOutputStream(amrFile, true);
 
-			fos.write(parserString2Byte);
+			if("ALL".equals(order.getFlag()) || "START".equals(order.getFlag())){
+				fos.write(parserString2Byte,0, 1024*8);
+				fos.w
+			}
 
 			fos.flush();
 
@@ -206,9 +211,9 @@ public class SnatchOrderActivity extends SlidingFragmentActivity implements
 				fos = null;
 			}
 		}
-		
+
 		System.out.println(order.getFlag());
-		if ("END".equals(order.getFlag())) {
+		if ("ALL".equals(order.getFlag()) || "END".equals(order.getFlag())) {
 			return true;
 		}
 
@@ -588,22 +593,29 @@ public class SnatchOrderActivity extends SlidingFragmentActivity implements
 
 			int size = responseOrders.size();
 
-			if (!isStartSpeking) {
-				isStartSpeking = true;
-				if (size != 0) {
-					orderNum += 1;
+			switch (order.getType()) {
+			case 0:// 文本给讯飞解析
+				responseOrders.add(size, order);
+				adapter.notifyDataSetChanged();
+
+				if (!isStartSpeking) {
+					isStartSpeking = true;
+					if (size != 0) {
+						orderNum += 1;
+					}
+					playerOrder(order);
 				}
-				switch (order.getType()) {
-				case 0:// 文本给讯飞解析
+				break;
+			case 1:// 音频直接播放
+				if (createSoundFile(order)) {
+					if (size != 0) {
+						orderNum += 1;
+					}
 					responseOrders.add(size, order);
 					adapter.notifyDataSetChanged();
-					playerOrder(order);
-					break;
-				case 1:// 音频直接播放
 
-					if (createSoundFile(order)) {
-						responseOrders.add(size, order);
-						adapter.notifyDataSetChanged();
+					if (!isStartSpeking) {
+						isStartSpeking = true;
 						try {
 							mMediaPlayer = new MediaPlayer();
 							mMediaPlayer.setDataSource(getAmrFile(
@@ -619,6 +631,8 @@ public class SnatchOrderActivity extends SlidingFragmentActivity implements
 											mMediaPlayer.stop();
 											mMediaPlayer.release();
 											mMediaPlayer = null;
+											getAmrFile(
+													order.getPhone()).delete();
 											mHandler.sendEmptyMessageDelayed(3,
 													2000);
 										}
@@ -630,9 +644,6 @@ public class SnatchOrderActivity extends SlidingFragmentActivity implements
 						} catch (IOException e) {
 							e.printStackTrace();
 						}
-
-					} else {
-						isStartSpeking = false;
 					}
 
 					break;

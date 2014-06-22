@@ -42,6 +42,12 @@ public class MessageBackReciver extends BroadcastReceiver {
 			if (!dialog.isShowing()) {
 				dialog.show();
 			}
+			try {
+				is.acceptResult(new JSONObject("{\"response\":\"1000\"}"));
+			} catch (JSONException e) {
+				e.printStackTrace();
+			}
+
 		} else if (action.equals(BackService.SENDIMAGE_ACTION)) {// 图片上传完成
 
 			try {

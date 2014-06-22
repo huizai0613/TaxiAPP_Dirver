@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.lang.ref.WeakReference;
+import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Arrays;
@@ -31,8 +32,11 @@ public class BackService extends Service {
 	private static final String TAG = "BackService";
 	private static long HEART_BEAT_RATE = 10 * 1000;
 
-	public static final String HOST = "192.168.1.254";// "192.168.1.21";//
-	public static final int PORT = 7018;
+//	public static final String HOST = "192.168.1.254";// "192.168.1.21";//
+//	public static final int PORT = 7018;
+	
+	public static final String HOST = "120.210.73.148";// "192.168.1.21";//
+	public static final int PORT = 4002;
 
 	public static final String MESSAGE_ACTION = "com.wutong.message_ACTION";
 	public static final String SENDIMAGE_ACTION = "com.wutong.message_ssendimage_ACTION";
@@ -194,7 +198,10 @@ public class BackService extends Service {
 
 	private void initSocket() {// 初始化Socket
 		try {
-			Socket so = new Socket(HOST, PORT);
+			Socket so = new Socket();
+			
+			so.connect(new InetSocketAddress(HOST, PORT), 100);
+			
 			mSocket = new WeakReference<Socket>(so);
 			mReadThread = new ReadThread(so);
 			mReadThread.start();

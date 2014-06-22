@@ -482,16 +482,20 @@ public class SplashActivity extends Activity implements ImBaseSocketNet {
 
 		MyLogger.i("result", "接受数据");
 		handler.removeCallbacks(runnable);
-		try {
-			info = taxiLib.parserVersion(jsonObject);
-			Message msg = new Message();
-			msg.what = GET_INFO_SUCCESS;
-			handler.sendMessage(msg);
-		} catch (NetRequestException e) {
-			e.getError().print(context);
-			Message msg = new Message();
-			msg.what = IO_ERROR;
-			handler.sendMessage(msg);
+		
+		if(!jsonObject.optString("response").equals("1000")){
+			try {
+				info = taxiLib.parserVersion(jsonObject);
+				Message msg = new Message();
+				msg.what = GET_INFO_SUCCESS;
+				handler.sendMessage(msg);
+			} catch (NetRequestException e) {
+				e.getError().print(context);
+				Message msg = new Message();
+				msg.what = IO_ERROR;
+				handler.sendMessage(msg);
+			}
+			
 		}
 
 	}

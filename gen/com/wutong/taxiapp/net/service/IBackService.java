@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /Users/xiangyu/Desktop/TaxiApp/TaxiAPP_Dirver/src/com/wutong/taxiapp/net/service/IBackService.aidl
+ * Original file: E:\\2014_6_17Androidworkspace(TaxiApp)\\TaxiAPP_Dirver\\src\\com\\wutong\\taxiapp\\net\\service\\IBackService.aidl
  */
 package com.wutong.taxiapp.net.service;
 public interface IBackService extends android.os.IInterface
