@@ -32,11 +32,11 @@ public class BackService extends Service {
 	private static final String TAG = "BackService";
 	private static long HEART_BEAT_RATE = 10 * 1000;
 
-//	public static final String HOST = "192.168.1.254";// "192.168.1.21";//
-//	public static final int PORT = 7018;
+	public static final String HOST = "192.168.1.254";// "192.168.1.21";//
+	public static final int PORT = 7018;
 	
-	public static final String HOST = "120.210.73.148";// "192.168.1.21";//
-	public static final int PORT = 4002;
+//	public static final String HOST = "120.210.73.148";// "192.168.1.21";//
+//	public static final int PORT = 4002;
 
 	public static final String MESSAGE_ACTION = "com.wutong.message_ACTION";
 	public static final String SENDIMAGE_ACTION = "com.wutong.message_ssendimage_ACTION";

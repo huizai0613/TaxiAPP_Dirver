@@ -168,7 +168,7 @@ public class SnatchOrderActivity extends SlidingFragmentActivity implements
 	}
 
 	// 生成音频临时文件
-	private boolean createSoundFile(ResponseOrder order) {
+	private  boolean createSoundFile(ResponseOrder order) {
 		FileOutputStream fos = null;
 		byte[] parserString2Byte = parserString2Byte(order.getSourceSound());
 		File amrFile = getAmrFile(order.getPhone());
@@ -186,13 +186,11 @@ public class SnatchOrderActivity extends SlidingFragmentActivity implements
 
 		try {
 			fos = new FileOutputStream(amrFile, true);
-
-			if("ALL".equals(order.getFlag()) || "START".equals(order.getFlag())){
-				fos.write(parserString2Byte,0, 1024*8);
-				fos.w
-			}
+			
+			fos.write(parserString2Byte);
 
 			fos.flush();
+			
 
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
